@@ -1,0 +1,6 @@
+# example.test robots.txt — 2026-05 revision
+User-agent: *
+Disallow: /drafts/
+Disallow: /internal/
+
+Sitemap: https://example.test/sitemap.xml

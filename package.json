@@ -1,0 +1,53 @@
+{
+  "name": "crawlaw",
+  "version": "0.1.0",
+  "description": "Evaluates robots.txt with RFC 9309-exact semantics: which bots may fetch what, an embedded AI-crawler audit, and semantic policy diffs — offline, zero dependencies.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "crawlaw": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "robots.txt",
+    "rfc-9309",
+    "ai-crawlers",
+    "crawler",
+    "audit",
+    "diff",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/crawlaw.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/crawlaw#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/crawlaw/issues"
+  }
+}

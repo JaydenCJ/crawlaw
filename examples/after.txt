@@ -1,0 +1,10 @@
+# example.test robots.txt — 2026-07 revision: block AI training crawlers.
+# (Note the /internal/ rule was lost in the edit — crawlaw diff catches it.)
+User-agent: GPTBot
+User-agent: CCBot
+Disallow: /
+
+User-agent: *
+Disallow: /drafts/
+
+Sitemap: https://example.test/sitemap.xml

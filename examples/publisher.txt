@@ -1,0 +1,21 @@
+# robots.txt for a mid-size publisher (example.test)
+# Policy: no AI-training crawlers; search engines and archives stay welcome.
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: *
+Disallow: /drafts/
+Disallow: /internal/
+Allow: /drafts/press-kit.pdf
+
+Sitemap: https://example.test/sitemap.xml
